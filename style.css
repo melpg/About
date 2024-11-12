@@ -481,9 +481,13 @@
         margin: revert-layer;
         
     }
-    .projects{
-        
+    .projects  {
         margin: 1px;
+    }
+    
+    .projects .pro {
+        display: grid;
+        margin: auto;
     }
     .contact{
         margin: 0;
