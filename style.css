@@ -404,6 +404,10 @@
     width: 95%;
     border-radius: 5px;
     margin: 5rem auto 0 auto;
+    background-image: url("https://i.ibb.co/G01bYwj/contact.jpg");
+   
+    background-position: center;
+    background-size: cover;
 }
 
 .contactForm h3{
