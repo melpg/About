@@ -223,9 +223,7 @@
    .about .content {
     display: flex;
     grid-template-columns: 1fr 1fr;
-    /* grid-gap: 6rem; */
-    margin-top: 45px;
-    padding: 75px;
+    
     
 }
 .about p{
@@ -298,13 +296,12 @@
     font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 3.5rem;
+    
     position: relative;
     color: #111;
-    margin-top: auto;
-   
+    
     max-width: 120rem;
-    margin: 50px;
+    
    
    } 
    .projects h3::after{
@@ -450,9 +447,6 @@
     text-align: left;
     text-transform: capitalize;
 }
-
-
-
 .contact-form button {
     background: linear-gradient(135deg, #6C63FF, #9E7BFF);
     color: white;
@@ -477,19 +471,6 @@
     text-transform: capitalize;
     font-size: 2rem;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .book-layout {
-        flex-direction: column;
-    }
-    .left-panel, .right-panel {
-        flex: none;
-        width: 100%;
-    }
-}
-
-
 @media (max-width: 576px) {
     .navbar-brand {
       font-size: 1.2rem;
@@ -573,3 +554,65 @@
     }
   }
   
+  .container {
+    margin-top: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem;
+    
+    border-radius: 8px;
+}
+.card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.card {
+    overflow: hidden;
+    background-color: #f8f8f8; 
+    border-radius: 8px; 
+    border: 1px solid #ddd; 
+}
+
+
+.card .card-title {
+    text-align: start;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 10px;
+}
+
+.card .card-text {
+    text-align: start;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6; 
+}
+.card .btn {
+    background: #8080808c;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .btn:hover {
+    background-color: white; 
+}
