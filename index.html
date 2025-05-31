@@ -1,363 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
-    <link rel="stylesheet" href="style.css" />
-    
-      <!--Font-Awesome-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio Template" />
+  <link rel="stylesheet" href="style.css" />
+
+  <noscript>
+    <link rel="stylesheet" href="noscript.css" />
+  </noscript>
+  <!--Font-Awesome-->
   <script src="https://kit.fontawesome.com/6606e36ae0.js" crossorigin="anonymous"></script>
   <!--Google fonts API-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
   <!--bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm custom-navbar fixed-top" >
-        <div class="container-fluid" style="padding: 1rem 5rem;">
-            <a class="navbar-brand" href="#">
-                Lakshmi P G
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>    
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-    <!--home section-->
-    <div class="container-fluid" style="margin-top: 89px;" id="home">
-        <div class="home-content">
-       <h1 class="reveal-text">Hi, I'm Lakshmi P G</h1>
-       <div class="home-text">
-        Full-Stack web developer skilled in building dynamic, user-focused web applications from front to back, delivering efficient, scalable solutions that drive impact.
-       </div>
-       <div class="social">
-        <a href="https://github.com/melpg" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/lakshmipg/" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a>
-        </div>
-       </div>
-     
-     <div class="scrolldown" >
-        <a class="" href="#about">
-            <i class="fa-solid fa-arrow-down"></i>
-            <i class="fa-solid fa-arrow-down"></i>
-        </div></a>
-        </div>
-    <!--About-->
-    <div class="container-fluid" id="about">
-      <div class="about">
-          <h3 style="font-weight: bold;">About Me</h3>
-          <h6>Explore this section for a deeper insight into my background, skills, and passions.</h6>
-          <div class="content">
-              <div>
-                  <h3 style="letter-spacing: normal; color: #a77f4d;">Get to know me!</h3>
-                  <p>I'm a <strong> Full-stack web developer</strong> with expertise in creating dynamic and engaging user interfaces while ensuring robust backend functionality. Leveraging the power of the <strong>MERN Stack</strong>, I deliver high-performance applications that drive product success. Explore my work in the Projects section!</p>
-                  <p>I welcome exciting <strong>Job</strong> opportunities where I can leverage my skills to make a meaningful impact while continually learning and evolving. If you have a role that aligns with my expertise and ambitions, please feel free to reach out!</p>
-                  <p><strong>Certification</strong> :: Full-Stack Web Development Internship Program</p>
-                  
-                </div>
-                <div class="vl"></div>
-                 
-              <div class="skild">
-                  <h3>Skills</h3>
-                  <div class="skills__skill"><i class="fa-brands fa-html5"></i>HTML5</div>
-                  <div class="skills__skill"><i class="fa-brands fa-css3-alt"></i>CSS3</div>
-                  <div class="skills__skill"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
-                  <div class="skills__skill"><i class="fa-brands fa-js"></i>JavaScript</div>
-                  <div class="skills__skill"><i class="fa-brands fa-react"></i>React.js</div>
-                  <div class="skills__skill">Express.js</div>
-                  <div class="skills__skill"><i class="fa-brands fa-node-js"></i>Node.js</div>
-                  <div class="skills__skill"><i class="fa-solid fa-database"></i>MongoDB</div>
-                  <div class="skills__skill"><i class="fa-solid fa-database"></i>MySQL</div>
-                  <div class="skills__skill"><i class="fa-solid fa-database"></i>MongoDB Atlas</div>
-                  <div class="skills__skill"><i class="fa-solid fa-code-merge"></i>Git</div>
-                  <div class="skills__skill"><i class="fa-brands fa-github"></i>GitHub</div>
-                  <div class="skills__skill">Canva</div>
-                  <div class="skills__skill"><i class="fa-brands fa-figma"></i>Figma</div>
-              </div>
-          </div>
+<body>
+
+
+  <nav class="navbar navbar-expand-sm custom-navbar fixed-top">
+    <div class="container-fluid" style="padding: 1rem 5rem;">
+      <a class="navbar-brand" href="#">
+        Lakshmi P G
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#" class="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <!--dropdown-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Designs</a>
+            <ul class="dropdown-menu">
+
+              <li><a class="dropdown-item" href="index1.html">Design 2</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <!--home section-->
+  <div class="container-fluid" style="margin-top: 89px;" id="home">
+    <div class="home-content">
+      <h1 class="reveal-text">Hi, I'm Lakshmi P G</h1>
+      <div class="home-text">
+        Full-Stack web developer skilled in building dynamic, user-focused web applications from front to back,
+        delivering efficient, scalable solutions that drive impact.
+      </div>
+      <div class="social">
+        <a href="https://github.com/melpg" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/melpg/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="scrolldown">
+      <a class="" href="#about">
+        <i class="fa-solid fa-arrow-down"></i>
+        <i class="fa-solid fa-arrow-down"></i>
+    </div></a>
   </div>
-  
-    <!--projects-->    
-    <div class="container" id="projects">
-      <div class="projects">
-        <h3 style="font-weight: bold;">Projects</h3>
-        <h6>Discover a collection of projects, each with its own case study</h6></div>
+  <!--About-->
+  <div class="container-fluid" id="about">
+    <div class="about">
+      <h3 style="font-weight: bold;">About Me</h3>
+      <h6>Explore this section for a deeper insight into my background, skills, and passions.</h6>
+      <div class="content">
+        <div>
+          <h3 style="letter-spacing: normal; color: #a77f4d;">Get to know me!</h3>
+          <p>
+            I'm a <strong>Full-Stack Web Developer</strong> specializing in building dynamic, user-friendly interfaces
+            and robust backend systems using the <strong>MERN stack</strong>. I create high-performance applications
+            designed to solve real-world problems and drive meaningful results. Take a look at my work in the Projects
+            section!
+          </p>
+
+          <p>My journey into web development began with a curiosity about what happens behind the screen.
+            Since then, I’ve built projects and continuously improved my skills
+            across both frontend and backend technologies. I thrive on solving complex problems,
+            enhancing user experiences, and transforming ideas into reality through code.</p>
+          <p>
+            I'm actively seeking exciting <strong>career opportunities</strong> where I can contribute, grow, and make
+            an impact. If you're looking for a developer who's passionate about continuous learning and delivering value
+            through code, let's connect!
+          </p>
+
+          <div style="padding: 0;">
+            <h3 style="letter-spacing: normal; color: #a77f4d;">Certification</h3>
+            <p style="padding: 0;"># Full-Stack Web Development Internship Program.</p>
+            <p style="padding: 0;margin-top: -25px;"># IBM Full Stack Software Developer Professional Certificate.</p>
+
+          </div>
+
+
+
+
+        </div>
+        <div class="vl"></div>
+
+        <div class="skild">
+          <h3>Skills</h3>
+          <div class="filters">
+            <button onclick="filterSkills('all')" class="filterbtn">All</button>
+            <button onclick="filterSkills('frontend')" class="filterbtn">Frontend</button>
+            <button onclick="filterSkills('backend')" class="filterbtn">Backend</button>
+            <button onclick="filterSkills('database')" class="filterbtn">Database</button>
+            <button onclick="filterSkills('cloud')" class="filterbtn">Cloud</button>
+            <button onclick="filterSkills('tools')" class="filterbtn">Tools</button>
+            <button onclick="filterSkills('design')" class="filterbtn">Design</button>
+          </div>
+
+          <div class="skills__skill frontend"><i class="fa-brands fa-html5"></i> HTML5</div>
+          <div class="skills__skill frontend"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+          <div class="skills__skill frontend"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+          <div class="skills__skill frontend"><i class="fa-brands fa-js"></i> JavaScript</div>
+          <div class="skills__skill frontend"><i class="fa-brands fa-react"></i> React.js</div>
+
+          <div class="skills__skill backend">Express.js</div>
+          <div class="skills__skill backend">Python</div>
+          <div class="skills__skill backend"><i class="fa-brands fa-node-js"></i> Node.js</div>
+
+          <div class="skills__skill database"><i class="fa-solid fa-database"></i> MongoDB</div>
+          <div class="skills__skill database"><i class="fa-solid fa-database"></i> MySQL</div>
+          <div class="skills__skill cloud database"><i class="fa-solid fa-database"></i> MongoDB Atlas</div>
+
+          <div class="skills__skill tools"><i class="fa-solid fa-code-merge"></i> Git</div>
+          <div class="skills__skill tools">Docker</div>
+          <div class="skills__skill cloud"><i class="fa-brands fa-github"></i> GitHub</div>
+          <div class="skills__skill cloud">Render</div>
+          <div class="skills__skill cloud">Netlify</div>
+
+          <div class="skills__skill design">Canva</div>
+          <div class="skills__skill design"><i class="fa-brands fa-figma"></i> Figma</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--projects-->
+  <div class="container" id="projects">
+    <div class="projects">
+      <h3 style="font-weight: bold;">Projects</h3>
+      <h6>Discover a collection of projects, each with its own case study</h6>
+    </div>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
-          <img src="images/p2.png" class="card-img-top" alt="..." class="default-img">
+          <img src="images/p2.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
             <h4 class="card-title">AJ Wellness</h4>
-                  <p class="card-text">An open-source project developed using the MERN stack, this application highlights my expertise in building dynamic, full-stack web solutions that drive functionality and user engagement.</p>
-                  <div class="projectskills">
-                    <h4>Tools Used</h4>
-                    
-                    <div class="skills__skill">HTML5</div>
-                    <div class="skills__skill">CSS3</div>
-                  <div class="skills__skill">Bootstrap</div>
-                  <div class="skills__skill">JavaScript</div>
-                  <div class="skills__skill">React.js</div>
-                  <div class="skills__skill">Express.js</div>
-                  <div class="skills__skill">Node.js</div>
-                  <div class="skills__skill">MongoDB</div>
-                  <div class="skills__skill">Git</div>
-                  <div class="skills__skill">GitHub</div>
-                  <div class="skills__skill">Netlify</div>
-                  <div class="skills__skill">Render</div>
-    
-                </div>
-                <div >
-                  <button type="button" class="btn" class="previewbtn" onclick="window.open('https://ajwellness.netlify.app/', '_blank')">Preview</button>
-                  <button type="button" class="btn" class="previewbtn" onclick="window.open('https://github.com/melpg/ajshop', '_blank')">View Code</button></div>
+            <p class="card-text">An open-source project developed using the MERN stack, this application highlights my
+              expertise in building dynamic, full-stack web solutions that drive functionality and user engagement.</p>
+            <div class="projectskills">
+              <h4>Tools Used</h4>
+
+              <div class="skills__skill">HTML5</div>
+              <div class="skills__skill">CSS3</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React.js</div>
+              <div class="skills__skill">Express.js</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">GitHub</div>
+              <div class="skills__skill">Netlify</div>
+              <div class="skills__skill">Render</div>
+
+            </div>
+            <div>
+              <button type="button" class="btn" class="previewbtn"
+                onclick="window.open('https://ajwellness.netlify.app/', '_blank')">Preview</button>
+              <button type="button" class="btn" class="previewbtn"
+                onclick="window.open('https://github.com/melpg/ajshop', '_blank')">View Code</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="images/cal2.png" class="card-img-top" alt="...">
-          <div class="card-body" >
+          <img src="images/cal2.png" class="card-img-top" alt="..." id="default">
+          <div class="card-body">
             <h5 class="card-title">Basic Calculator</h5>
-            <p class="card-text">A functional calculator built to perform essential arithmetic operations with a sleek, user-friendly interface. This project demonstrates my skills in front-end development, event handling, and responsive design. This calculator efficiently handles real-time calculations, ensuring accuracy and usability across various screen sizes.</p>
+            <p class="card-text">A functional calculator built to perform essential arithmetic operations with a sleek,
+              user-friendly interface. This project demonstrates my skills in front-end development, event handling, and
+              responsive design. This calculator efficiently handles real-time calculations, ensuring accuracy and
+              usability across various screen sizes.</p>
             <div style="margin: 10px;">
               <h4>Tools Used</h4>
               <div class="skills__skill">HTML5</div>
-                    <div class="skills__skill">CSS3</div>
-                  <div class="skills__skill">Bootstrap</div>
-                  <div class="skills__skill">JavaScript</div>
-                  <div class="skills__skill">Git</div>
-                  <div class="skills__skill">GitHub</div>
-                  
-                  
+              <div class="skills__skill">CSS3</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">GitHub</div>
+
+
             </div>
-          <div class="prebutton">
-          <button type="button" class="btn" onclick="window.open('https://melpg.github.io/BasicCalculator/', '_blank')">Preview</button>
-          <button type="button" class="btn" onclick="window.open('https://github.com/melpg/BasicCalculator/', '_blank')">View Code</button></div>
-          
-         
+            <div class="prebutton">
+              <button type="button" class="btn"
+                onclick="window.open('https://melpg.github.io/BasicCalculator/', '_blank')">Preview</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://github.com/melpg/BasicCalculator/', '_blank')">View Code</button>
+            </div>
+
+
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="images/net1.png" class="card-img-top" alt="...">
+          <img src="images/net1.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
             <h5 class="card-title">Netflix Homepage</h5>
-            <p class="card-text">I designed a modern, sleek homepage inspired by Netflix, focusing on a visually engaging layout and smooth user experience. The page replicates a dynamic content display, with featured shows and movies, navigation menus, and custom hover effects. This project showcases my skills in creating responsive and interactive front-end designs, combining styling with user-focused aesthetics.</p>
+            <p class="card-text">I designed a modern, sleek homepage inspired by Netflix, focusing on a visually
+              engaging layout and smooth user experience. The page replicates a dynamic content display, with featured
+              shows and movies, navigation menus, and custom hover effects. This project showcases my skills in creating
+              responsive and interactive front-end designs, combining styling with user-focused aesthetics.</p>
             <div>
               <h4>Tools Used</h4>
               <div class="skills__skill">HTML5</div>
               <div class="skills__skill">CSS3</div>
-            <div class="skills__skill">Bootstrap</div>
-            <div class="skills__skill">GitHub</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">GitHub</div>
             </div>
-          <div>
-          <button type="button" class="btn" onclick="window.open('https://melpg.github.io/NetflixHomepage/', '_blank')">Preview</button>
-          <button type="button" class="btn" onclick="window.open('https://github.com/melpg/NetflixHomepage', '_blank')">View Code</button></div>
-          
-         
+            <div>
+              <button type="button" class="btn"
+                onclick="window.open('https://melpg.github.io/NetflixHomepage/', '_blank')">Preview</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://github.com/melpg/NetflixHomepage', '_blank')">View Code</button>
+            </div>
+
+
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="images/zom2.png" class="card-img-top" alt="...">
+          <img src="images/zom2.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
             <h5 class="card-title">Zomato Homepage</h5>
-            <p class="card-text"> This project features a responsive, Zomato-inspired homepage crafted entirely with Bootstrap, focusing on a visually appealing and user-friendly interface. Built using only Bootstrap components without any custom CSS or JavaScript, it highlights design simplicity and responsiveness.</p>
-                <div style="margin: 10px;">
-                    <h4>Tools Used</h4>
-                    
-                  <div class="skills__skill">Bootstrap</div>
-                  <div class="skills__skill">GitHub</div>
-                  </div>
-                <div>
-                <button type="button" class="btn" onclick="window.open('https://melpg.github.io/ZomatoHomepage/', '_blank')">Preview1</button>
-                <button type="button" class="btn" onclick="window.open('https://zomatohomepage2.netlify.app/', '_blank')">Preview2</button>
-                <button type="button" class="btn" onclick="window.open('https://github.com/melpg/ZomatoHomepage/', '_blank')">View Code</button></div>
+            <p class="card-text"> This project features a responsive, Zomato-inspired homepage crafted entirely with
+              Bootstrap, focusing on a visually appealing and user-friendly interface. Built using only Bootstrap
+              components without any custom CSS or JavaScript, it highlights design simplicity and responsiveness.</p>
+            <div style="margin: 10px;">
+              <h4>Tools Used</h4>
+
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">GitHub</div>
+            </div>
+            <div>
+              <button type="button" class="btn"
+                onclick="window.open('https://melpg.github.io/ZomatoHomepage/', '_blank')">Preview1</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://zomatohomepage2.netlify.app/', '_blank')">Preview2</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://github.com/melpg/ZomatoHomepage/', '_blank')">View Code</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="images/blog2.png" class="card-img-top" alt="...">
+          <img src="images/blog2.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
-            <h4 >Event Blog</h4>
-                 <p class="card-text">I have developed an event blog using the MERN stack, showcasing my ability to build dynamic web applications that leverage the power of MongoDB, Express.js, React.js, and Node.js. This project emphasizes my skills in creating a full-stack application with a seamless user experience, enabling users to engage with event content effectively.</p>
-                 <div >
-                     <h4>Tools Used</h4>
-                     <div class="skills__skill">HTML5</div>
-                     <div class="skills__skill">CSS3</div>
-                   <div class="skills__skill">Bootstrap</div>
-                   <div class="skills__skill">JavaScript</div>
-                   <div class="skills__skill">React.js</div>
-                   <div class="skills__skill">Express.js</div>
-                   <div class="skills__skill">Node.js</div>
-                   <div class="skills__skill">MongoDB</div>
-                   <div class="skills__skill">Git</div>
-                   <div class="skills__skill">GitHub</div>
-                   <div class="skills__skill">Netlify</div>
-                   <div class="skills__skill">Render</div>
-                   </div>
-                 <div>
-                 <button type="button" class="btn" onclick="window.open('https://ishaevents.netlify.app', '_blank')">Preview</button>
-                 <button type="button" class="btn" onclick="window.open('https://github.com/melpg/ISHA-DemoSite', '_blank')">View Code</button>
-                 
-                </div>
+            <h4>Event Blog</h4>
+            <p class="card-text">I have developed an event blog using the MERN stack, showcasing my ability to build
+              dynamic web applications that leverage the power of MongoDB, Express.js, React.js, and Node.js. This
+              project emphasizes my skills in creating a full-stack application with a seamless user experience,
+              enabling users to engage with event content effectively.</p>
+            <div>
+              <h4>Tools Used</h4>
+              <div class="skills__skill">HTML5</div>
+              <div class="skills__skill">CSS3</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React.js</div>
+              <div class="skills__skill">Express.js</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">GitHub</div>
+              <div class="skills__skill">Netlify</div>
+              <div class="skills__skill">Render</div>
+            </div>
+            <div>
+              <button type="button" class="btn"
+                onclick="window.open('https://ishaevents.netlify.app', '_blank')">Preview</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://github.com/melpg/ISHA-DemoSite', '_blank')">View Code</button>
+
+            </div>
           </div>
         </div>
       </div>
+
       <div class="col">
         <div class="card">
-          <img src="images/todo.png" class="card-img-top" alt="...">
+          <img src="images/plant.png" class="card-img-top" alt="..." id="default">
+          <div class="card-body">
+            <h4>Plants shopping</h4>
+            <p class="card-text">A fully responsive and modern online plant store interface built with React.js,
+              featuring elegant product listings, interactive cart functionality for adding and managing items, and
+              sleek UI components—designed to provide a seamless shopping experience for plant enthusiasts, without
+              payment integration.
+            </p>
+            <div>
+              <h4>Tools Used</h4>
+              <div class="skills__skill">HTML5</div>
+              <div class="skills__skill">CSS3</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React.js</div>
+
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">GitHub</div>
+              <div class="skills__skill">Netlify</div>
+              <div class="skills__skill">Render</div>
+            </div>
+            <div>
+              <button type="button" class="btn"
+                onclick="window.open('https://plantsshopping.netlify.app/')">Preview</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://github.com/melpg/e-plantShopping', '_blank')">View
+                Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/cont.png" class="card-img-top" alt="..." id="default">
+          <div class="card-body">
+            <h4>Conference-Expense-Planner</h4>
+            <p class="card-text">A user-friendly React application designed to plan and estimate conference expenses,
+              including venue, add-ons, and meal selections.</p>
+            <div>
+              <h4>Tools Used</h4>
+              <div class="skills__skill">HTML5</div>
+              <div class="skills__skill">CSS3</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React.js</div>
+
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">GitHub</div>
+              <div class="skills__skill">Netlify</div>
+              <div class="skills__skill">Render</div>
+            </div>
+            <div>
+              <button type="button" class="btn"
+                onclick="window.open('https://conference-eventplanner.netlify.app/')">Preview</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://github.com/melpg/Conference-Expense-Planner', '_blank')">View
+                Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/car1.png" class="card-img-top" alt="..." id="default">
+          <div class="card-body">
+            <h4>Event Blog</h4>
+            <p class="card-text">A full-stack web application for browsing and managing car dealerships with user
+              authentication and responsive design.</p>
+            <div>
+              <h4>Tools Used</h4>
+
+              <div class="skills__skill">React.js</div>
+              <div class="skills__skill">Express.js</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">python</div>
+
+              <div class="skills__skill">Render</div>
+            </div>
+            <div>
+              <button type="button" class="btn"
+                onclick="window.open('https://xrwvm-fullstack-developer-capstone-helo.onrender.com/')">Preview</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://github.com/melpg/xrwvm-fullstack_developer_capstone', '_blank')">View
+                Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card">
+          <img src="images/todo.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
             <h4>To-Do List</h4>
-                 <p class="card-text">I developed a to-do list application using React.js, focusing on creating an intuitive user experience. This project showcases my ability to manage state effectively and implement interactive features, allowing users to easily add, edit, and delete tasks.</p>
-                 <div style="margin: 35px;">
-                     <h4>Tools Used</h4>
-                     <div class="skills__skill">HTML5</div>
-                     <div class="skills__skill">CSS3</div>
-                   
-                   <div class="skills__skill">JavaScript</div>
-                   <div class="skills__skill">React.js</div>
-                   
-                   <div class="skills__skill">GitHub</div>
-                   <div class="skills__skill">Netlify</div>
-                   
-                   </div>
-                 <div>
-                 <button type="button" class="btn" onclick="window.open('https://tdl-rjs.netlify.app/')">Preview</button>
-                 <button type="button" class="btn" onclick="window.open('https://github.com/melpg/ToDoList', '_blank')">View Code</button></div>
+            <p class="card-text">I developed a to-do list application using React.js, focusing on creating an intuitive
+              user experience. This project showcases my ability to manage state effectively and implement interactive
+              features, allowing users to easily add, edit, and delete tasks.</p>
+            <div style="margin: 35px;">
+              <h4>Tools Used</h4>
+              <div class="skills__skill">HTML5</div>
+              <div class="skills__skill">CSS3</div>
+
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React.js</div>
+
+              <div class="skills__skill">GitHub</div>
+              <div class="skills__skill">Netlify</div>
+
+            </div>
+            <div>
+              <button type="button" class="btn" onclick="window.open('https://tdl-rjs.netlify.app/')">Preview</button>
+              <button type="button" class="btn"
+                onclick="window.open('https://github.com/melpg/ToDoList', '_blank')">View Code</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    
-        <!--contact-->
-        <div class="container-fluid" id="contact">
-            <div class="contact">
-                <h3 style="font-weight: bold;">Contact Me</h3>
-                
-                   
-                    <div class="contactForm">
-                      <h3>Get In Touch</h3>
-                        <div id="successMessage" style="display: none; color: green; margin-bottom: 15px; text-transform: capitalize;">
-                            Message sent successfully!
-                        </div>
-                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkgnjaae"
-        method="POST">
-            <div class="form-group">
-              <label> Name</label>
-                <input type="text" name="name" placeholder="Enter your Name " required>
-                
-            </div>
-            <div class="form-group">
-              <label> Email</label>
-                <input type="email" name="email" placeholder="Enter your Email " required>
-                
-            </div>
-            <div class="form-group">
-              <label>Message</label>
-                <textarea name="message" rows="5" placeholder="Message " required></textarea>
-                
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-                     
-                     </div>
-                    
-                 </div>
-            </div>
-         </div>
-  
+  </div>
 
-         <footer class="bg-dark text-light pt-2 pb-2" id="#footer" >
-          <div class="container text-center text-md-left" >
-             <div class="row text-center text-md-left" >
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-2" style="text-align: start;">
-                   <h5 class="text-uppercase mb-3 font-weight-bold text-warning">Lakshmi P G</h5>
-                   <p >Full-Stack Web Developer crafting dynamic, user-focused, and scalable web applications</p>
-                </div>
-                
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2" style="text-align: start;">
-                   <h5 class="text-uppercase mb-3 font-weight-bold text-warning">Contact </h5>
-                   <p >
-                      <i class="fas fa-home " style="margin-right:10px ;"></i>Bengaluru
-                   </p>
-                   <p><i class="fas fa-envelope " style="margin-right:10px ;"></i>lakshmi.pg@outlook.com</p>
-                   <p><i class="fas fa-phone " style="margin-right:10px ;"></i>+91 9738181181</p>
-                   <ul class="list-unstyled list-inline">
-                      <li class="list-inline-item"><a href="https://github.com/melpg" target="_blank" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fa-brands fa-github"></i></a></li>
-                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/lakshmipg/" target="_blank" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fab fa-linkedin"></i></a></li>
-                      
-                   </ul>
-                </div>
-             </div>
-                <hr class="mt-1">
-                <div class="row align-item-center justify-content-center">
-                   <div class="col-md-7 col-lg-8">
-                      <p class="text-warning">Copyright ©  </p>
-                   </div>
-                </div>
+  <!--contact-->
+  <div class="container-fluid" id="contact">
+    <div class="contact">
+      <h3 style="font-weight: bold;">Contact Me</h3>
+
+
+      <div class="contactForm">
+        <h3>Get In Touch</h3>
+        <div id="successMessage" style="display: none; color: green; margin-bottom: 15px; text-transform: capitalize;">
+          Message sent successfully!
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkgnjaae" method="POST">
+          <div class="form-group">
+            <label> Name</label>
+            <input type="text" name="name" placeholder="Enter your Name " required>
+
           </div>
-       </footer>
-       
+          <div class="form-group">
+            <label> Email</label>
+            <input type="email" name="email" placeholder="Enter your Email " required>
 
-      <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-        
-            // Send form data using fetch API
-            fetch(this.action, {
-                method: this.method,
-                body: new FormData(this),
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    // Show success message and reset form
-                    const successMessage = document.getElementById('successMessage');
-                    successMessage.style.display = 'block';
-                    this.reset();
-        
-                    // Hide the success message after 3 seconds
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 3000); // 3000 milliseconds = 3 seconds
-                } else {
-                    alert("Oops! There was a problem submitting your form");
-                }
-            }).catch(error => {
-                alert("Oops! There was a problem submitting your form");
-            });
-        });
-        </script>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Message " required></textarea>
+
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <footer class="bg-dark text-light pt-2 pb-2" id="#footer">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-2" style="text-align: start;">
+          <h5 class="text-uppercase mb-3 font-weight-bold text-warning">Lakshmi P G</h5>
+          <p>Full-Stack Web Developer crafting dynamic, user-focused, and scalable web applications</p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2" style="text-align: start;">
+          <h5 class="text-uppercase mb-3 font-weight-bold text-warning">Contact </h5>
+          <p>
+            <i class="fas fa-home " style="margin-right:10px ;"></i>Bengaluru
+          </p>
+          <p><i class="fas fa-envelope " style="margin-right:10px ;"></i>lakshmi.pg@outlook.com</p>
+          <p><i class="fas fa-phone " style="margin-right:10px ;"></i>+91 9738181181</p>
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a href="https://github.com/melpg" target="_blank"
+                class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/melpg/" target="_blank"
+                class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fab fa-linkedin"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+      <hr class="mt-1">
+      <div class="row align-item-center justify-content-center">
+        <div class="col-md-7 col-lg-8">
+          <p class="text-warning">Copyright © </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Send form data using fetch API
+      fetch(this.action, {
+        method: this.method,
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          // Show success message and reset form
+          const successMessage = document.getElementById('successMessage');
+          successMessage.style.display = 'block';
+          this.reset();
+
+          // Hide the success message after 3 seconds
+          setTimeout(() => {
+            successMessage.style.display = 'none';
+          }, 3000); // 3000 milliseconds = 3 seconds
+        } else {
+          alert("Oops! There was a problem submitting your form");
+        }
+      }).catch(error => {
+        alert("Oops! There was a problem submitting your form");
+      });
+    });
+
+    function filterSkills(category) {
+      let skills = document.querySelectorAll('.skills__skill');
+      skills.forEach(skill => {
+        if (category === 'all' || skill.classList.contains(category)) {
+          skill.classList.remove('hidden');
+        } else {
+          skill.classList.add('hidden');
+        }
+      });
+    }
+
+  </script>
 </body>
+
 </html>
