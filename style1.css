@@ -2813,7 +2813,7 @@ article.special header.major h2:after {
 }
 
 header.major p {
-    font-size: 1.25em;
+    font-size:medium !important;
     letter-spacing: -0.025em;
 }
 
