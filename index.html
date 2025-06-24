@@ -9,9 +9,6 @@
   <meta name="description" content="Portfolio Template" />
   <link rel="stylesheet" href="style.css" />
 
-  <noscript>
-    <link rel="stylesheet" href="noscript.css" />
-  </noscript>
   <!--Font-Awesome-->
   <script src="https://kit.fontawesome.com/6606e36ae0.js" crossorigin="anonymous"></script>
   <!--Google fonts API-->
@@ -20,6 +17,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+
   <style>
     .hidden {
       display: none;
@@ -47,20 +49,12 @@
             <a class="nav-link" href="#" class="active">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">Profile</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <!--dropdown-->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Designs</a>
-            <ul class="dropdown-menu">
 
-              <li><a class="dropdown-item" href="index1.html">Design 2</a></li>
-
-            </ul>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
@@ -74,14 +68,20 @@
     <div class="home-content">
       <h1 class="reveal-text">Hi, I'm Lakshmi P G</h1>
       <div class="home-text">
-        Full-Stack web developer skilled in building dynamic, user-focused web applications from front to back,
-        delivering efficient, scalable solutions that drive impact.
+        IBM-certified Full-Stack Web Developer skilled in building responsive, user-centric, and scalable web
+        applications with end-to-end expertise.
       </div>
+
       <div class="social">
         <a href="https://github.com/melpg" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/melpg/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
+      <div class="home-text">
+
+        <a class="btn" href="#projects">Projects</a>
+      </div>
     </div>
+
 
     <div class="scrolldown">
       <a class="" href="#about">
@@ -90,10 +90,10 @@
     </div></a>
   </div>
   <!--About-->
-  <div class="container-fluid" id="about">
-    <div class="about">
-      <h3 style="font-weight: bold;">About Me</h3>
-      <h6>Explore this section for a deeper insight into my background, skills, and passions.</h6>
+  <div class="container-fluid">
+    <div class="about" id="about">
+      <h3 style="font-weight: bold;">Profile</h3>
+      <h6>A closer look at my background, expertise, and passion for development</h6>
       <div class="content">
         <div>
           <h3 style="letter-spacing: normal; color: #a77f4d;">Get to know me!</h3>
@@ -114,15 +114,6 @@
             through code, let's connect!
           </p>
 
-          <div style="padding: 0;">
-            <h3 style="letter-spacing: normal; color: #a77f4d;">Certification</h3>
-            <p style="padding: 0;"># Full-Stack Web Development Internship Program.</p>
-            <p style="padding: 0;margin-top: -25px;"># IBM Full Stack Software Developer Professional Certificate.</p>
-
-          </div>
-
-
-
 
         </div>
         <div class="vl"></div>
@@ -130,13 +121,12 @@
         <div class="skild">
           <h3>Skills</h3>
           <div class="filters">
-            <button onclick="filterSkills('all')" class="filterbtn">All</button>
-            <button onclick="filterSkills('frontend')" class="filterbtn">Frontend</button>
-            <button onclick="filterSkills('backend')" class="filterbtn">Backend</button>
-            <button onclick="filterSkills('database')" class="filterbtn">Database</button>
-            <button onclick="filterSkills('cloud')" class="filterbtn">Cloud</button>
-            <button onclick="filterSkills('tools')" class="filterbtn">Tools</button>
-            <button onclick="filterSkills('design')" class="filterbtn">Design</button>
+            <button class="filterbtn" data-category="frontend">Frontend</button>
+            <button class="filterbtn" data-category="backend">Backend</button>
+            <button class="filterbtn" data-category="database">Database</button>
+            <button class="filterbtn" data-category="cloud">Cloud</button>
+            <button class="filterbtn" data-category="tools">Tools</button>
+            <button class="filterbtn" data-category="design">Design</button>
           </div>
 
           <div class="skills__skill frontend"><i class="fa-brands fa-html5"></i> HTML5</div>
@@ -173,9 +163,9 @@
       <h3 style="font-weight: bold;">Projects</h3>
       <h6>Discover a collection of projects, each with its own case study</h6>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/p2.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
             <h4 class="card-title">AJ Wellness</h4>
@@ -200,18 +190,20 @@
             </div>
             <div>
               <button type="button" class="btn" class="previewbtn"
-                onclick="window.open('https://ajwellness.netlify.app/', '_blank')">Preview</button>
+                onclick="window.open('https://ajwellness.netlify.app/', '_blank')">Live Demo</button>
               <button type="button" class="btn" class="previewbtn"
-                onclick="window.open('https://github.com/melpg/ajshop', '_blank')">View Code</button>
+                onclick="window.open('https://github.com/melpg/ajshop', '_blank')">
+                Source Code
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/cal2.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
-            <h5 class="card-title">Basic Calculator</h5>
+            <h5 class="card-title">Calqulate</h5>
             <p class="card-text">A functional calculator built to perform essential arithmetic operations with a sleek,
               user-friendly interface. This project demonstrates my skills in front-end development, event handling, and
               responsive design. This calculator efficiently handles real-time calculations, ensuring accuracy and
@@ -229,21 +221,21 @@
             </div>
             <div class="prebutton">
               <button type="button" class="btn"
-                onclick="window.open('https://melpg.github.io/BasicCalculator/', '_blank')">Preview</button>
+                onclick="window.open('https://melpg.github.io/BasicCalculator/', '_blank')">Live Demo</button>
               <button type="button" class="btn"
-                onclick="window.open('https://github.com/melpg/BasicCalculator/', '_blank')">View Code</button>
+                onclick="window.open('https://github.com/melpg/BasicCalculator/', '_blank')">Source Code</button>
             </div>
 
 
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/net1.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
-            <h5 class="card-title">Netflix Homepage</h5>
-            <p class="card-text">I designed a modern, sleek homepage inspired by Netflix, focusing on a visually
+            <h5 class="card-title">Streamix</h5>
+            <p class="card-text">Streamix is a visually rich, sleek homepage inspired by Netflix, focusing on a visually
               engaging layout and smooth user experience. The page replicates a dynamic content display, with featured
               shows and movies, navigation menus, and custom hover effects. This project showcases my skills in creating
               responsive and interactive front-end designs, combining styling with user-focused aesthetics.</p>
@@ -256,42 +248,41 @@
             </div>
             <div>
               <button type="button" class="btn"
-                onclick="window.open('https://melpg.github.io/NetflixHomepage/', '_blank')">Preview</button>
+                onclick="window.open('https://melpg.github.io/NetflixHomepage/', '_blank')">Live Demo</button>
               <button type="button" class="btn"
-                onclick="window.open('https://github.com/melpg/NetflixHomepage', '_blank')">View Code</button>
+                onclick="window.open('https://github.com/melpg/NetflixHomepage', '_blank')">Source Code</button>
             </div>
 
 
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/zom2.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
-            <h5 class="card-title">Zomato Homepage</h5>
+            <h5 class="card-title">Zomify</h5>
             <p class="card-text"> This project features a responsive, Zomato-inspired homepage crafted entirely with
               Bootstrap, focusing on a visually appealing and user-friendly interface. Built using only Bootstrap
               components without any custom CSS or JavaScript, it highlights design simplicity and responsiveness.</p>
-            <div style="margin: 10px;">
+            <div>
               <h4>Tools Used</h4>
 
               <div class="skills__skill">Bootstrap</div>
               <div class="skills__skill">GitHub</div>
             </div>
             <div>
+
               <button type="button" class="btn"
-                onclick="window.open('https://melpg.github.io/ZomatoHomepage/', '_blank')">Preview1</button>
+                onclick="window.open('https://zomatohomepage2.netlify.app/', '_blank')">Live Demo</button>
               <button type="button" class="btn"
-                onclick="window.open('https://zomatohomepage2.netlify.app/', '_blank')">Preview2</button>
-              <button type="button" class="btn"
-                onclick="window.open('https://github.com/melpg/ZomatoHomepage/', '_blank')">View Code</button>
+                onclick="window.open('https://github.com/melpg/ZomatoHomepage/', '_blank')">Source Code</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/blog2.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
             <h4>Event Blog</h4>
@@ -315,21 +306,21 @@
               <div class="skills__skill">Render</div>
             </div>
             <div>
+              <button type="button" class="btn" onclick="window.open('https://ishaevents.netlify.app', '_blank')">Live
+                Demo</button>
               <button type="button" class="btn"
-                onclick="window.open('https://ishaevents.netlify.app', '_blank')">Preview</button>
-              <button type="button" class="btn"
-                onclick="window.open('https://github.com/melpg/ISHA-DemoSite', '_blank')">View Code</button>
+                onclick="window.open('https://github.com/melpg/ISHA-DemoSite', '_blank')">Source Code</button>
 
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col">
-        <div class="card">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/plant.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
-            <h4>Plants shopping</h4>
+            <h4>Plantique</h4>
             <p class="card-text">A fully responsive and modern online plant store interface built with React.js,
               featuring elegant product listings, interactive cart functionality for adding and managing items, and
               sleek UI components—designed to provide a seamless shopping experience for plant enthusiasts, without
@@ -349,18 +340,18 @@
               <div class="skills__skill">Render</div>
             </div>
             <div>
+              <button type="button" class="btn" onclick="window.open('https://plantsshopping.netlify.app/')">Live
+                Demo</button>
               <button type="button" class="btn"
-                onclick="window.open('https://plantsshopping.netlify.app/')">Preview</button>
-              <button type="button" class="btn"
-                onclick="window.open('https://github.com/melpg/e-plantShopping', '_blank')">View
+                onclick="window.open('https://github.com/melpg/e-plantShopping', '_blank')">Source
                 Code</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col">
-        <div class="card">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/cont.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
             <h4>Conference-Expense-Planner</h4>
@@ -381,21 +372,22 @@
             </div>
             <div>
               <button type="button" class="btn"
-                onclick="window.open('https://conference-eventplanner.netlify.app/')">Preview</button>
+                onclick="window.open('https://conference-eventplanner.netlify.app/')">Live Demo</button>
               <button type="button" class="btn"
-                onclick="window.open('https://github.com/melpg/Conference-Expense-Planner', '_blank')">View
+                onclick="window.open('https://github.com/melpg/Conference-Expense-Planner', '_blank')">Source
                 Code</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col">
-        <div class="card">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/car1.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
-            <h4>Event Blog</h4>
-            <p class="card-text">A full-stack web application for browsing and managing car dealerships with user
+            <h4>Driveon</h4>
+            <p class="card-text">Driveon is a full-stack web application designed for browsing and managing car
+              dealerships with user
               authentication and responsive design.</p>
             <div>
               <h4>Tools Used</h4>
@@ -410,9 +402,10 @@
             </div>
             <div>
               <button type="button" class="btn"
-                onclick="window.open('https://xrwvm-fullstack-developer-capstone-helo.onrender.com/')">Preview</button>
+                onclick="window.open('https://xrwvm-fullstack-developer-capstone-helo.onrender.com/')">Live
+                Demo</button>
               <button type="button" class="btn"
-                onclick="window.open('https://github.com/melpg/xrwvm-fullstack_developer_capstone', '_blank')">View
+                onclick="window.open('https://github.com/melpg/xrwvm-fullstack_developer_capstone', '_blank')">Source
                 Code</button>
             </div>
           </div>
@@ -420,15 +413,16 @@
       </div>
 
 
-      <div class="col">
-        <div class="card">
+      <div class="col d-flex">
+        <div class="card h-100">
           <img src="images/todo.png" class="card-img-top" alt="..." id="default">
           <div class="card-body">
-            <h4>To-Do List</h4>
-            <p class="card-text">I developed a to-do list application using React.js, focusing on creating an intuitive
+            <h4>Tasksy</h4>
+            <p class="card-text">Tasksy is a sleek and interactive to-do list application using React.js, focusing on
+              creating an intuitive
               user experience. This project showcases my ability to manage state effectively and implement interactive
               features, allowing users to easily add, edit, and delete tasks.</p>
-            <div style="margin: 35px;">
+            <div>
               <h4>Tools Used</h4>
               <div class="skills__skill">HTML5</div>
               <div class="skills__skill">CSS3</div>
@@ -441,9 +435,9 @@
 
             </div>
             <div>
-              <button type="button" class="btn" onclick="window.open('https://tdl-rjs.netlify.app/')">Preview</button>
+              <button type="button" class="btn" onclick="window.open('https://tdl-rjs.netlify.app/')">Live Demo</button>
               <button type="button" class="btn"
-                onclick="window.open('https://github.com/melpg/ToDoList', '_blank')">View Code</button>
+                onclick="window.open('https://github.com/melpg/ToDoList', '_blank')">Source Code</button>
             </div>
           </div>
         </div>
@@ -488,8 +482,8 @@
   </div>
 
 
-  <footer class="bg-dark text-light pt-2 pb-2" id="#footer">
-    <div class="container text-center text-md-left">
+  <footer class="bg-dark text-light pt-2 pb-2 " id="#footer">
+    <div class="container-fluid text-center text-md-left">
       <div class="row text-center text-md-left">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-2" style="text-align: start;">
           <h5 class="text-uppercase mb-3 font-weight-bold text-warning">Lakshmi P G</h5>
@@ -502,7 +496,7 @@
             <i class="fas fa-home " style="margin-right:10px ;"></i>Bengaluru
           </p>
           <p><i class="fas fa-envelope " style="margin-right:10px ;"></i>lakshmi.pg@outlook.com</p>
-          <p><i class="fas fa-phone " style="margin-right:10px ;"></i>+91 9738181181</p>
+
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item"><a href="https://github.com/melpg" target="_blank"
                 class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fa-brands fa-github"></i></a>
@@ -551,16 +545,53 @@
       });
     });
 
-    function filterSkills(category) {
-      let skills = document.querySelectorAll('.skills__skill');
+    const filterButtons = document.querySelectorAll('.filterbtn');
+    const skills = document.querySelectorAll('.skills__skill');
+    let activeFilters = [];
+
+    function updateSkillsDisplay() {
+      if (activeFilters.length === 0) {
+        skills.forEach(skill => skill.classList.remove('hidden'));
+        return;
+      }
+
       skills.forEach(skill => {
-        if (category === 'all' || skill.classList.contains(category)) {
-          skill.classList.remove('hidden');
-        } else {
-          skill.classList.add('hidden');
-        }
+        const show = activeFilters.some(filter => skill.classList.contains(filter));
+        skill.classList.toggle('hidden', !show);
       });
     }
+
+    function updateButtonsUI() {
+      filterButtons.forEach(btn => {
+        const category = btn.dataset.category;
+        const isActive = activeFilters.includes(category);
+        btn.classList.toggle('active', isActive);
+        btn.innerHTML = isActive
+          ? `${category} <span class="close-icon" data-close="${category}">&times;</span>`
+          : category;
+      });
+
+      document.querySelectorAll('.close-icon').forEach(closeBtn => {
+        closeBtn.onclick = (e) => {
+          e.stopPropagation();
+          const toRemove = closeBtn.getAttribute('data-close');
+          activeFilters = activeFilters.filter(f => f !== toRemove);
+          updateButtonsUI();
+          updateSkillsDisplay();
+        };
+      });
+    }
+
+    filterButtons.forEach(button => {
+      const category = button.dataset.category;
+      button.addEventListener('click', () => {
+        if (!activeFilters.includes(category)) {
+          activeFilters.push(category);
+        }
+        updateButtonsUI();
+        updateSkillsDisplay();
+      });
+    });
 
   </script>
 </body>

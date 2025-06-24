@@ -11,10 +11,11 @@ body {
     box-sizing: border-box;
     position: relative;
     line-height: 1.5;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: "Source Sans 3", sans-serif !important;
     background-color: #fafafa;
 }
 
@@ -36,7 +37,7 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #267583 !important;
+    color: #93785d !important;
 }
 
 #collapsibleNavbar {
@@ -46,6 +47,7 @@ body {
     letter-spacing: 1px;
     font-weight: 700;
     transition: color .3s;
+    font-family: "Source Sans 3", sans-serif !important;
 }
 
 .navbar-nav .nav-item {
@@ -58,7 +60,7 @@ body {
 }
 
 #collapsibleNavbar a:hover {
-    color: #267583;
+    color: #93785d;
     text-decoration: underline;
 }
 
@@ -87,6 +89,7 @@ body {
     text-align: center;
     color: #7f5a3b;
     font-weight: 700;
+    font-family: "Source Sans 3", sans-serif !important;
 }
 
 .home-text {
@@ -97,7 +100,7 @@ body {
     line-height: 1.6;
     margin: 3rem auto 0 auto;
     max-width: 59rem;
-
+    font-family: "Source Sans 3", sans-serif !important;
 }
 
 .home-text:hover {
@@ -127,7 +130,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 36px;
-    margin-top: 100px;
+    margin-top: 59px;
 }
 
 .social a {
@@ -262,6 +265,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     font-family: sans-serif;
+    text-transform: capitalize;
 }
 
 .filterbtn:hover {
@@ -269,19 +273,33 @@ body {
 
 }
 
+.filterbtn.active {
+    background-color: #a37c4b54;
+    text-transform: capitalize;
+}
+
+.filterbtn .close-icon {
+    display: inline-block;
+    margin-left: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
 .about p {
-    font-size: 1.2rem;
+    font-size: 18px;
     color: #666;
     max-width: 50rem;
-    line-height: 1.7;
+    /* line-height: 1.7; */
     margin-bottom: 1rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans 3", sans-serif !important;
     text-transform: none !important;
-    ;
-    letter-spacing: normal;
+    /* letter-spacing: normal; */
     padding: 11px;
     text-align: start;
     margin: 36px;
+    margin-bottom: -35px;
 }
 
 .hidden {
@@ -294,7 +312,8 @@ body {
 }
 
 .skills__skill {
-    padding: 10px 20px;
+    padding: 5px;
+    margin: 5px;
     font-size: 1rem;
     background: rgba(167, 127, 77, 0.1);
     border-radius: 25px;
@@ -328,13 +347,13 @@ body {
 }
 
 .card #default {
-    border-radius: 100%;
+    border-radius: 12%;
     align-self: anchor-center;
-    width: 60%;
+    width: 65%;
 }
 
 .vl {
-    height: 700px;
+    height: 550px;
     width: 5px;
     background: linear-gradient(to top, transparent 0%, #a77f4d 40%, transparent 100%, transparent 100%);
 }
@@ -468,7 +487,7 @@ body {
     margin-top: 6rem;
     max-width: 80rem;
     text-align: center;
-    width: 95%;
+    width: 50%;
     border-radius: 5px;
     margin: 5rem auto 0 auto;
     background-image: url("https://i.ibb.co/G01bYwj/contact.jpg");
@@ -654,7 +673,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+
     padding: 1rem;
 
     border-radius: 8px;
@@ -696,12 +715,22 @@ body {
 }
 
 .card .btn {
-    background: #8080808c;
+    background: rgba(167, 127, 77, 0.1);
     color: black;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .card .btn:hover {
     background-color: white;
+}
+
+.home-text .btn {
+    background: rgba(167, 127, 77, 0.1);
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Source Sans 3", sans-serif !important;
+    border: 1px solid
 }
