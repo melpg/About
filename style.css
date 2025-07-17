@@ -622,11 +622,23 @@ body {
     }
 
     .contact .pro img {
-        width: 300px;
+        width: 500px;
     }
 
     .contactForm form {
         margin: 20px;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .scrolldown {
+        bottom: 5px;
+    }
+
+    .home-text .btn {
+        margin-top: -58px;
     }
 
     .vl {
@@ -652,6 +664,18 @@ body {
 
     .contact {
         margin: 0;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .scrolldown {
+        bottom: 5px;
+    }
+
+    .home-text .btn {
+        margin-top: -58px;
     }
 
     .vl {
@@ -732,5 +756,5 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Source Sans 3", sans-serif !important;
-    border: 1px solid
+    border: 1px solid black;
 }
